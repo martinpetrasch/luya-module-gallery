@@ -68,7 +68,7 @@ As the modules are not shipped with default view files you can use the following
 <table border="1">
 <?php foreach($albenData as $item): ?>
 <tr>
-    <td><img src="<?= Yii::$app->storage->getImage($item->cover_image_id)->applyFilter('medium-thumbnail'); ?>" border="0" /></td>
+    <td><img src="<?= Yii::$app->storage->getImage($item->cover_image_id)->applyFilter('medium-thumbnail')->source; ?>" border="0" /></td>
     <td>
         <h2><?= $item->title; ?></h2>
         <p><?= $item->description; ?></p>
@@ -93,7 +93,7 @@ As the modules are not shipped with default view files you can use the following
         <div class="row">
             <?php foreach($model->albumImages as $image): ?>
                 <div class="col-md-3">
-                    <img class="img-responsive" src="<?= $image->source; ?>" border="0" />
+                    <img class="img-responsive" src="<?= $image->getImage()->source; ?>" border="0" />
                 </div>
             <?php endforeach; ?>
         </div>
