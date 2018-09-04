@@ -27,7 +27,10 @@ After installation via Composer include the module to your configuration file wi
 ```php
 'modules' => [
     // ...
-    'gallery' => 'luya\gallery\frontend\Module',
+    'gallery' => [
+        'class' => 'luya\gallery\frontend\Module',
+        'useAppViewPath' => false, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.
+    ],
     'galleryadmin' => 'luya\gallery\admin\Module',
 ]
 ```
