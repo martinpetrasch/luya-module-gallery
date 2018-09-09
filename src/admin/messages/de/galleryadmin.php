@@ -15,7 +15,7 @@ return [
     'album_cat_id' => 'Kategorie',
     'album_sort_index' => 'Sortierung',
     'album_is_highlight' => 'Highlight',
-    'album_upload' => 'Bilder Hochladen &amp; Verwalten',
+    'album_upload' => 'Bilder Hochladen & Verwalten',
     'album_category_error' => 'Bitte wählen Sie eine Kategorie aus.',
     'album_title_create_error' => 'Bitte geben Sie einen Titel ein.',
 
