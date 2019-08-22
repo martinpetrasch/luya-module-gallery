@@ -158,7 +158,7 @@ class Album extends NgRestModel
      */
     public function getAlbumImages()
     {
-        return $this->hasMany(AlbumImage::class, ['album_id' => 'id']);
+        return $this->hasMany(AlbumImage::class, ['album_id' => 'id'])->orderBy(['sortindex' => SORT_ASC]);
     }
     
     /**
