@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. This projec
 
 ## 1.0.1 (22. August 2019)
 
-+ Added view files for default output
++ Added view files for default output (#6)
 + Fixed readme
 + Added sorting to gallery images
 
